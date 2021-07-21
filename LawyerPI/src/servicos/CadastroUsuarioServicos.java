@@ -24,12 +24,12 @@ public class CadastroUsuarioServicos {
         caduserDAO.cadastrarUsuario(cVO);
     }
     
-    /*
+    
     public ArrayList<CadastroUsuarioVO> buscar() throws SQLException {
         CadastroUsuarioDAO caduserDAO = DAOFactory.getCadastroUsuarioDAO();
         return caduserDAO.buscar();
     }
-    */
+    
      public void deletarUsuario(int idUsuarioCliente) throws SQLException{
         CadastroUsuarioDAO caduserDAO = DAOFactory.getCadastroUsuarioDAO();
         caduserDAO.deletarUsuario(idUsuarioCliente);

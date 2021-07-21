@@ -35,7 +35,7 @@ public class CadastroUsuarioDAO {
         }
                     
         }
-     /*
+     
     public ArrayList<CadastroUsuarioVO> buscar() throws SQLException{
         Connection con = Conexao.getConexao();
         Statement stat = con.createStatement();
@@ -51,21 +51,21 @@ public class CadastroUsuarioDAO {
                 c.setTelefone1(rs.getString("telefone1"));
                 c.setTelefone2(rs.getString("telefone2"));
                 c.setNome(rs.getString("nome"));
-                c.setBairro(rs.getString("bairro_endereco"));
+                c.setBairro(rs.getString("bairro"));
                 c.setGenero(rs.getString("genero"));
                 c.setCidade(rs.getString("cidade"));
                 c.setEstado(rs.getString("estado"));
                 c.setDataNascimento(rs.getString("data_nascimento"));
-                c.setRgUsuario(rs.getString("rg_usuario"));
+                c.setRg(rs.getString("rg"));
                 c.setCnpj(rs.getString("cnpj"));
                 c.setCpf(rs.getString("cpf"));
-                //c.setCep( rs.getInt("cep"));
-                c.setComplemento(rs.getInt("complemente_endereco"));
-                c.setNumeroEndereco(rs.getInt("numero_endereco"));
-                c.setPessoaFisica(rs.getString("pessoa_fisica"));
-                c.setPessoaJuridica(rs.getString("pessoa_juridica"));
-                c.setTrabalho(rs.getString("trabalho"));
-                c.setResidencia(rs.getString("residencia"));
+                c.setComplementoEndereco(rs.getString("complemento_endereco"));
+                c.setNumero(rs.getInt("numero"));
+                c.setPessoaFisicaJuridica(rs.getString("pessoa_fisica_juridica"));
+                c.setEndereco(rs.getString("endereco"));
+                c.setIdentificacaoEndereco(rs.getString("identificacao_endereco"));
+                
+                
                 
                 cda.add(c);
         }
@@ -78,8 +78,8 @@ public class CadastroUsuarioDAO {
             con.close();
         }
      } 
-    */
-public void deletarUsuario(int idUsuarioCliente) throws SQLException{
+    
+      public void deletarUsuario(int idUsuarioCliente) throws SQLException{
         Connection con = Conexao.getConexao();
         Statement sta = con.createStatement();
         try{ String sql;
@@ -93,6 +93,6 @@ public void deletarUsuario(int idUsuarioCliente) throws SQLException{
         }
         
     } 
-    
+
 }
 
