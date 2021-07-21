@@ -1,0 +1,4 @@
+CREATE TABLE login_usuario_cliente(
+	email varchar(50) primary key,
+	senha varchar(10)
+);

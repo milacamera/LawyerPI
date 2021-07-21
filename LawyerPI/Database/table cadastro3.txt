@@ -1,0 +1,6 @@
+CREATE TABLE cadastro3 ( 
+    data_endividamento varchar(12) primary key,
+    situacao_do_usuario text NOT NULL,
+    situacao_de_habitacao varchar(30) NOT NULL,
+    tamanho_da_divida double NULL
+);

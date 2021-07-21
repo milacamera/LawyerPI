@@ -1,0 +1,10 @@
+CREATE TABLE perfil_usuario_cliente(
+	nickname varchar(20) primary key,
+	nome_usuario varchar(100),
+	email_usuario varchar(50)
+	constraints 
+);
+
+alter table perfil_usuario_cliente 
+add constraint fk_email_usuario
+foreign key (email_usuario) references login_usuario_cliente(email);

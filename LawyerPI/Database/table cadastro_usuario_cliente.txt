@@ -1,0 +1,19 @@
+create table cadastro_usuario_cliente (
+	id_usuario int(11) primary key auto_increment,
+	nome varchar(100),
+	telefone1 varchar(25),
+	telefone2 varchar(25),
+	cpf varchar(25),
+	cnpj varchar(25),
+	rg varchar(10),
+	data_nascimento varchar(25),
+	genero varchar(30),
+	cidade varchar(50),
+	estado varchar(2),
+	endereco varchar(255),
+	complemento_endereco varchar(50),
+	bairro varchar(50),
+	identificacao_endereco varchar(50),
+	pessoa_fisica_juridica varchar(50),
+	numero int(11)
+);

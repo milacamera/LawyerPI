@@ -1,0 +1,5 @@
+CREATE TABLE cadastro2 ( 
+    especificacao_de_negocio varchar(50) primary key,
+    tipo_de_renda varchar(30)  NOT NULL,
+    renda varchar(50) NOT NULL
+);
