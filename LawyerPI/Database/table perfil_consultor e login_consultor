@@ -1,0 +1,11 @@
+Create table consultor_advogado(
+ email varchar(50) primary key,
+ senha varchar(10) not null
+);
+
+create table perfil_consultor(	
+  id_consultor int auto_increment  primary key,
+  numero_oab varchar(15) unique not null,
+  nome varchar(100) not null,
+  telefone varchar(12) not null
+);
