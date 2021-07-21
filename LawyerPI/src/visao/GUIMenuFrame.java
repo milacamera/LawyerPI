@@ -46,7 +46,6 @@ public class GUIMenuFrame extends javax.swing.JFrame {
 
         jbLoginConsultor.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jbLoginConsultor.setText("Login do Consultor");
-        jbLoginConsultor.setEnabled(false);
         jbLoginConsultor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbLoginConsultorActionPerformed(evt);
@@ -162,7 +161,9 @@ public class GUIMenuFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jbCadastreSeActionPerformed
 
     private void jbLoginConsultorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbLoginConsultorActionPerformed
-        // TODO add your handling code here:
+       GUILoginConsultorFrame guiconsul = new GUILoginConsultorFrame();
+        guiconsul.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jbLoginConsultorActionPerformed
 
     /**

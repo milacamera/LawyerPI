@@ -39,5 +39,10 @@ public class ServicosFactory {
     public static CadastroUsuariolllServicos getCadastroUsuariolllServicos() {
         return caduserlllServicos;
     }
+    private static LoginConsultorServicos logiConsultorServicos = new LoginConsultorServicos();
+    public static LoginConsultorServicos getLoginConsultorServicos(){
+        return logiConsultorServicos;
+
+    }
     
 }

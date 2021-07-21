@@ -15,7 +15,9 @@ public class DAOFactory {
     private static PreCadastroDAO pcaduserDAO = new PreCadastroDAO();
     private static CadastroUsuariollDAO caduserllDAO = new CadastroUsuariollDAO();
     private static CadastroUsuariolllDAO caduserlllDAO = new CadastroUsuariolllDAO();
-    
+    private static LoginConsultorDAO logiconsultorDAO = new LoginConsultorDAO();
+    private static PerfilConsultorDAO pconsultorDAO = new PerfilConsultorDAO();
+  
 
     public static LoginUsuarioDAO getLoginUsuarioDAO(){
         return luserDAO;
@@ -40,5 +42,13 @@ public class DAOFactory {
      public static CadastroUsuariolllDAO getCadastroUsuariolllDAO(){
         return caduserlllDAO;
     }
-     
+     public static LoginConsultorDAO getCadastroConsultorDAO() {
+        return logiconsultorDAO;
+    }
+
+
+    public static PerfilConsultorDAO getPerfilConsultorDAO() {
+        return pconsultorDAO;
+    }
+
 }
